@@ -1,0 +1,100 @@
+`@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lobster&family=Source+Code+Pro:ital,wght@1,500&display=swap');
+
+:root {
+    --first-color: #F0EAD6;
+    --second-color: #000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.dark-theme{
+    --first-color: #000000;
+    --second-color: #F00EAD6;
+}
+#icon{
+    height: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+.section{
+    height: 100vh;
+    width: 100%;
+    background: var(--first-color);
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 90%;
+    margin-top:20px;
+    padding: 20ox 0;
+    display: flex;
+    
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li  a{
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--second-color);
+    font-family: 'Red Hat Mono', monospace;
+    font-size: 1.2rem;
+}
+nav ul li a:hover{
+    color: #008000;
+    transition: 0.5s;
+}
+.info{
+    margin-left: 8%;
+    margin-top: 5%;
+}
+.info h1{
+    font-size: 70px;
+    color: #212121;
+    margin-bottom: 5px;
+}
+span{
+    color: #55969D;
+}
+.info p{
+    color: #212121;
+    line-height: 22px;
+}
+.info a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #edf2fc;
+    display: inline-block;
+    margin: 30px 30px;
+    border-radius: 5px;
+}
+.img-box{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: -200px;
+}
+/* .img-box:hover .back-img{
+    .back-img{
+        bottom: 40px;
+} */
+.img-box:hover .main-img{
+    left: 54%;
+}
+
+.main-img {
+    width: 300px;
+}
